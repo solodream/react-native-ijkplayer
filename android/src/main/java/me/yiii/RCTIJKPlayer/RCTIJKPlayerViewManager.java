@@ -3,15 +3,13 @@ package me.yiii.RCTIJKPlayer;
 import android.app.Activity;
 
 import com.facebook.react.uimanager.ThemedReactContext;
-import com.facebook.react.uimanager.ViewGroupManager;
+import com.facebook.react.uimanager.SimpleViewManager;
 
-public class RCTIJKPlayerViewManager extends ViewGroupManager<RCTIJKPlayerView> {
+public class RCTIJKPlayerViewManager extends SimpleViewManager<RCTIJKPlayerView> {
     private static final String REACT_CLASS = "RCTIJKPlayer";
 
-    private Activity activity = null;
+    public RCTIJKPlayerViewManager(){
 
-    public RCTIJKPlayerViewManager(Activity activity){
-        this.activity = activity;
     }
 
     @Override
@@ -21,7 +19,7 @@ public class RCTIJKPlayerViewManager extends ViewGroupManager<RCTIJKPlayerView> 
 
     @Override
     public RCTIJKPlayerView createViewInstance(ThemedReactContext context) {
-        return new RCTIJKPlayerView(context, this.activity);
+        return new RCTIJKPlayerView(context);
     }
 
 }
