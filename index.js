@@ -19,21 +19,19 @@ function convertNativeProps(props) {
 
 export default class RCTIJKPlayer extends Component {
 
-    static PlayBackState = {
-        IJKMPMoviePlaybackStateStopped: 0,
-        IJKMPMoviePlaybackStatePlaying: 1,
-        IJKMPMoviePlaybackStatePaused: 2,
-        IJKMPMoviePlaybackStateInterrupted: 3,
-        IJKMPMoviePlaybackStateSeekingForward: 4,
-        IJKMPMoviePlaybackStateSeekingBackward: 5,
-    }
-
     static constants = {
-        PlayBackState: RCTIJKPlayer.PlayBackState,
+        PlayBackState: {
+            IJKMPMoviePlaybackStateStopped: 0,
+            IJKMPMoviePlaybackStatePlaying: 1,
+            IJKMPMoviePlaybackStatePaused: 2,
+            IJKMPMoviePlaybackStateInterrupted: 3,
+            IJKMPMoviePlaybackStateSeekingForward: 4,
+            IJKMPMoviePlaybackStateSeekingBackward: 5,
+        },
     };
 
     static propTypes = {
-            ...View.propTypes,
+        ...View.propTypes,
         push_url: PropTypes.string,
         onLiveStateChange: PropTypes.func,
     };
