@@ -1,9 +1,9 @@
-#import "RCTBridge.h"
+#import <React/RCTBridge.h>
 #import "RCTIJKPlayer.h"
 #import "RCTIJKPlayerManager.h"
-#import "RCTLog.h"
-#import "RCTUtils.h"
-#import "RCTEventDispatcher.h"
+#import <React/RCTLog.h>
+#import <React/RCTUtils.h>
+#import <React/RCTEventDispatcher.h>
 
 #import "UIView+React.h"
 #import <IJKMediaFramework/IJKFFMoviePlayerController.h>
