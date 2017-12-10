@@ -160,20 +160,12 @@ export default class RCTIJKPlayerWithController extends React.Component {
     }
 
     renderProgressView() {
-        var progress_view;
-        if (Platform.OS == 'ios') {
-            progress_view = (<ActivityIndicatorIOS
-                             animating={true}
-                             style={[]}
-                             size="large"
-                             color="#000fff"
-                             />)
-        } else {
-            progress_view = (<ProgressBarAndroid
-                             style={[]}
-                             styleAttr="Small"
-                             />)
-        }
+        var progress_view = (<ActivityIndicator
+            animating={true}
+            style={[]}
+            size="large"
+            color="#000fff"
+        />);
         return progress_view
     }
 
