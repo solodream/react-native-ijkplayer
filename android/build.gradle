@@ -16,7 +16,7 @@ android {
 
   defaultConfig {
     minSdkVersion 16
-    targetSdkVersion 22
+    targetSdkVersion 23
     versionCode 1
     versionName "1.0"
   }
@@ -31,14 +31,14 @@ repositories {
 }
 
 dependencies {
-  compile "com.facebook.react:react-native:0.19.+"
-  compile 'tv.danmaku.ijk.media:ijkplayer-java:0.6.0'
-  compile 'tv.danmaku.ijk.media:ijkplayer-armv7a:0.6.0'
+  compile "com.facebook.react:react-native:+"
+  compile 'tv.danmaku.ijk.media:ijkplayer-java:0.8.4'
+  compile 'tv.danmaku.ijk.media:ijkplayer-armv7a:0.8.4'
 
-  compile 'tv.danmaku.ijk.media:ijkplayer-armv5:0.6.0'
-  compile 'tv.danmaku.ijk.media:ijkplayer-arm64:0.6.0'
-  compile 'tv.danmaku.ijk.media:ijkplayer-x86:0.6.0'
-  compile 'tv.danmaku.ijk.media:ijkplayer-x86_64:0.6.0'
+  compile 'tv.danmaku.ijk.media:ijkplayer-armv5:0.8.4'
+  compile 'tv.danmaku.ijk.media:ijkplayer-arm64:0.8.4'
+  compile 'tv.danmaku.ijk.media:ijkplayer-x86:0.8.4'
+  compile 'tv.danmaku.ijk.media:ijkplayer-x86_64:0.8.4'
 
-  compile 'tv.danmaku.ijk.media:ijkplayer-exo:0.6.0'
+  compile 'tv.danmaku.ijk.media:ijkplayer-exo:0.8.4'
 }
